@@ -7,7 +7,6 @@ import { DataService } from '../data.service';
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-
     trigger('goals', [
       transition('* => *', [
         query(':enter', style({opacity: 0 }), {optional: true}),
@@ -26,7 +25,6 @@ import { DataService } from '../data.service';
             ]))]), {optional: true})
       ])
     ])
-
   ]
 })
 export class HomeComponent implements OnInit {
